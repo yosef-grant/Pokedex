@@ -58,9 +58,11 @@ searchBtn.addEventListener('click', () => {
 
 
 
+
+
 // Search bar 'enter'
 
-userInput.addEventListener('keyup', (e) => {
+userInput.addEventListener('keyup touchend', (e) => {
 
   if (e.key !== 'Enter') {
     searchQuery = userInput.value;
@@ -71,6 +73,7 @@ userInput.addEventListener('keyup', (e) => {
 }
 )
 ;
+
 
 // API search + Primary Functionality
 
