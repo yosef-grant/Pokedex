@@ -189,7 +189,7 @@ body {
     }
     
       .searchbar {
-       display: none;
+       /* display: none; */
         padding: 5px;
       }
       
