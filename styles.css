@@ -181,6 +181,87 @@ body {
   animation: smoothChange 0.8s linear;
 }
 
+@media screen and (max-width: 480px) {
+      .searchbar {
+       
+        padding: 5px;
+      }
+      
+      #search-bar {
+        width: 300px;
+        height: 40px;
+        font-size: 1.1em;
+        margin-bottom: 5px;
+      }
+            
+      #submit-btn {
+        width: 50px;
+        height: 40px;
+        font-size: 1.15em;
+      }
+      
+      .pokemon {
+        height: 375px;
+        width: 300px;
+        border: 15px solid rgb(243, 183, 52);
+        padding: 15px 20px;
+      }
+      
+      .name {
+        font-size: 2.5em;
+        margin-bottom: 15px;
+      }
+      .image {
+        width: 150px;
+      }
+      
+      #details {
+        width: 300px;
+        font-size: 1.2em;
+      }
+      
+      #bg {
+        width: 200px;
+        height: 200px;
+      }
+      
+      .message {
+        font-size: 1.9em;
+      }
+      
+      .error-message {
+        font-size: 1.75em;
+      }
+      
+      #controls {
+        width: 300px;
+      }
+      
+      #controls button {
+        min-height: 50px;
+        min-width: 75px;
+      }
+      
+      .next-prev {
+        height: 50px;
+      }
+      
+      
+      .random {
+        user-select: none;
+        padding: 5px;
+        font-size: 2em;
+      }
+      
+      .next img {
+        height: 45px;       
+      }
+      
+      .prev img {    
+        height: 45px; 
+      }
+}
+
 @keyframes growShrink {
   0% {
     transform: scale(1);
