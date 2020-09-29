@@ -62,10 +62,10 @@ searchBtn.addEventListener('click', () => {
 
 // Search bar 'enter'
 
-userInput.addEventListener('keyup touchend', (e) => {
+userInput.addEventListener('keyup', (e) => {
 
   if (e.key !== 'Enter') {
-    searchQuery = userInput.value;
+    searchQuery = e.target.value;
   } else if(searchQuery <= 1) {
     prevReset();
     getData(searchQuery);
