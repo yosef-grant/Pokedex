@@ -1,222 +1,212 @@
 body {
-    margin: 0 auto;
-    background-image: linear-gradient(180deg, rgb(199, 208, 245), rgb(248, 247, 247)55%);
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    
+  margin: 0 auto;
+  background-image: linear-gradient(
+    180deg,
+    rgb(199, 208, 245),
+    rgb(248, 247, 247) 55%
+  );
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .searchbar {
-    display: flex;
-    padding: 10px;
+  display: flex;
+  padding: 10px;
 }
 
 #search-bar {
-    width: 360px;
-    height: 50px;
-    border-top-left-radius: 2.5px;
-    border-bottom-left-radius: 2.5px;
-    font-size: 1.5em;
-    border: none;
-    text-transform: lowercase;
-    padding-left: 10px;
-    outline: none;
-    color: #5d5d5d
-    
+  width: 360px;
+  height: 50px;
+  border-top-left-radius: 2.5px;
+  border-bottom-left-radius: 2.5px;
+  font-size: 1.5em;
+  border: none;
+  text-transform: lowercase;
+  padding-left: 10px;
+  outline: none;
+  color: #5d5d5d;
 }
 
-#search-bar::placeholder{
-    font-style: italic;
-    color: rgb(209, 209, 209);
+#search-bar::placeholder {
+  font-style: italic;
+  color: rgb(209, 209, 209);
 }
 
 #submit-btn {
-    border: none;
-    border-top-right-radius: 2.5px;
-    border-bottom-right-radius: 2.5px;
-    outline: none;
-    transition: all 0.5s ease;
-    width: 75px;
-    cursor: pointer;
-    color: #5d5d5d;
-    font-size: 1.25em;
-    font-weight: bold;
-    
+  border: none;
+  border-top-right-radius: 2.5px;
+  border-bottom-right-radius: 2.5px;
+  outline: none;
+  transition: all 0.5s ease;
+  width: 75px;
+  cursor: pointer;
+  color: #5d5d5d;
+  font-size: 1.25em;
+  font-weight: bold;
 }
 
-#submit-btn:hover{
-    background-color: rgb(43, 161, 43);
-    color: white;
+#submit-btn:hover {
+  background-color: rgb(43, 161, 43);
+  color: white;
 }
 
-#submit-btn:active{
-    font-size:1.5em;
+#submit-btn:active {
+  font-size: 1.5em;
 }
-
 
 .pokemon {
-    height: 450px;
-    width: 350px;
-    border: 20px solid rgb(243, 183, 52);
-    border-radius: 10px;
-    background: rgb(255, 255, 255);
-    box-shadow: 2.5px 2.5px 3px rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 25px;
-    text-align: center;
-    margin-bottom: 20px;
+  height: 450px;
+  width: 350px;
+  border: 20px solid rgb(243, 183, 52);
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  box-shadow: 2.5px 2.5px 3px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 25px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .name {
-    text-transform: uppercase;
-    font-size: 3.25em;
-    z-index: 10;
-    margin-bottom: 15px;
-    color: dodgerblue;
+  text-transform: uppercase;
+  font-size: 3.25em;
+  z-index: 10;
+  margin-bottom: 15px;
+  color: dodgerblue;
 }
 
 .image {
-    width: 175px;
-    z-index: 10;
-    animation: growShrink 0.5s linear;
+  width: 175px;
+  z-index: 10;
+  animation: growShrink 0.5s linear;
 }
 
 #details {
-    width: 350px;
-    justify-content: space-around;
-    display: flex;
-    font-size: 1.6em;
-    margin-top: 15px;
+  width: 350px;
+  justify-content: space-around;
+  display: flex;
+  font-size: 1.6em;
+  margin-top: 15px;
 }
 
-
 .height {
-    color: rgb(89, 170, 251);
+  color: rgb(89, 170, 251);
 }
 
 .weight {
-    color: rgb(214, 129, 157);
+  color: rgb(214, 129, 157);
 }
 
 #bg {
-    width: 250px;
-    height: 250px;
-    z-index: 1;
+  width: 250px;
+  height: 250px;
+  z-index: 1;
 }
 
-
 .message {
-    font-size: 2.25em;
-    color: #000;
+  font-size: 2.25em;
+  color: #000;
 }
 
 .error-message {
-    font-size: 2em;
-    color: #000;
+  font-size: 2em;
+  color: #000;
 }
 
-
-
-
-
 #controls {
-    width: 400px;
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
+  width: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
 }
 
 #controls button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px 10px;
-    outline: none;
-    border: transparent 1px solid;
-    box-shadow: .75px .75px 3px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-    min-height: 90px;
-    min-width: 120px;
-    transition: all 0.75s ease;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  outline: none;
+  border: transparent 1px solid;
+  box-shadow: 0.75px 0.75px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  min-height: 90px;
+  min-width: 120px;
+  transition: all 0.75s ease;
 }
 
 .next-prev {
-    height: 75px;
-    display: flex;
+  height: 75px;
+  display: flex;
 }
 
 .nav-btn {
-    display: inline-block;
-    cursor: pointer;
-    font-weight: bolder;
-    color: palevioletred;
-    font-weight: 900;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bolder;
+  color: palevioletred;
+  font-weight: 900;
 }
 
 #controls button:hover {
-    background-color: white;
+  background-color: white;
 }
 
 #controls button:active {
-    border: dodgerblue 1px solid;
+  border: dodgerblue 1px solid;
 }
-
-
 
 .random {
-    user-select: none;
-    padding: 5px;
-    font-size: 2.5em;
+  user-select: none;
+  padding: 5px;
+  font-size: 2.5em;
 }
 
-.next img{ 
-    background: white;
-    border-radius: 50%;
-    height: 85px;
-    animation: smoothChange 0.8s linear;
-  
+.next img {
+  background: white;
+  border-radius: 50%;
+  height: 85px;
+  animation: smoothChange 0.8s linear;
 }
 
-.prev img{
-    background: white;
-    border-radius: 50%;
-    height: 85px;
-    animation: smoothChange 0.8s linear;
+.prev img {
+  background: white;
+  border-radius: 50%;
+  height: 85px;
+  animation: smoothChange 0.8s linear;
 }
 
 @keyframes growShrink {
-    0% {
-        transform: scale(1);
-    }
-    25%{
-    transform: scale(1.15);        
-    }
-    50%{
-    transform: scale(1.2);
-    }
-    75%{
-    transform: scale(1.15);
-    }
-    100%{
+  0% {
     transform: scale(1);
-    }
+  }
+  25% {
+    transform: scale(1.15);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  75% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 @keyframes smoothChange {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 50%;
-    }
-    100%{
-        opacity: 100%;
-    }
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
