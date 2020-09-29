@@ -182,6 +182,12 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+
+    body {
+        background-color: rgb(243, 183, 52);
+        background-image: none;
+    }
+    
       .searchbar {
        
         padding: 5px;
@@ -203,7 +209,8 @@ body {
       .pokemon {
         height: 325px;
         width: 280px;
-        border: 15px solid rgb(243, 183, 52);
+        border: none;
+        box-shadow: none;
         padding: 15px 20px;
       }
       
@@ -238,6 +245,7 @@ body {
       }
       
       #controls button {
+        box-shadow: none;
         min-height: 50px;
         min-width: 75px;
       }
