@@ -188,7 +188,7 @@ body {
       }
       
       #search-bar {
-        width: 300px;
+        width: 280px;
         height: 40px;
         font-size: 1.1em;
         margin-bottom: 5px;
@@ -201,8 +201,8 @@ body {
       }
       
       .pokemon {
-        height: 375px;
-        width: 300px;
+        height: 325px;
+        width: 280px;
         border: 15px solid rgb(243, 183, 52);
         padding: 15px 20px;
       }
