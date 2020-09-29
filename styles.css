@@ -1,0 +1,208 @@
+body {
+    margin: 0 auto;
+    background-image: linear-gradient(180deg, rgb(199, 208, 245), rgb(248, 247, 247)55%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.searchbar {
+    display: flex;
+    padding: 10px;
+}
+
+#search-bar {
+    width: 230px;
+    height: 30px;
+    border-top-left-radius: 2.5px;
+    border-bottom-left-radius: 2.5px;
+    font-size: 1.3em;
+    border: none;
+    text-transform: lowercase;
+    padding-left: 10px;
+    outline: none;
+    color: #5d5d5d
+    
+}
+
+#search-bar::placeholder{
+    font-style: italic;
+    color: rgb(209, 209, 209);
+}
+
+.pokemon {
+    height: 275px;
+    width: 200px;
+    border: 15px solid rgb(243, 183, 52);
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    box-shadow: 2.5px 2.5px 3px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.name {
+    text-transform: uppercase;
+    font-size: 2em;
+    z-index: 10;
+    margin-bottom: 15px;
+    color: dodgerblue;
+}
+
+.image {
+    width: 130px;
+    z-index: 10;
+    animation: growShrink 0.5s linear;
+}
+
+#details {
+    width: 180px;
+    justify-content: space-around;
+    display: flex;
+    font-size: 0.9em;
+    margin-top: 15px;
+}
+
+
+
+.height {
+    color: rgb(89, 170, 251);
+}
+
+.weight {
+    color: rgb(214, 129, 157);
+}
+
+
+.next-prev {
+    height: 75px;
+    display: flex;
+}
+
+#bg {
+    width: 150px;
+    height: 150px;
+    z-index: 1;
+}
+.details {
+    z-index: 10;
+    font-size: 1.1em;
+}
+
+#submit-btn {
+    border: none;
+    border-top-right-radius: 2.5px;
+    border-bottom-right-radius: 2.5px;
+    outline: none;
+    transition: all 0.5s ease;
+    width: 50px;
+    cursor: pointer;
+    color: #5d5d5d
+    
+}
+
+#submit-btn:hover{
+    background-color: rgb(43, 161, 43);
+    color: white;
+}
+
+#submit-btn:active{
+    font-size:1.5em;
+}
+
+#controls {
+    width: 225px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#controls button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    outline: none;
+    border: transparent 1px solid;
+    box-shadow: .75px .75px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    min-height: 25px;
+    min-width: 65px;
+    transition: all 0.75s ease;
+
+}
+
+#controls button:hover {
+    background-color: white;
+}
+
+#controls button:active {
+    border: dodgerblue 1px solid;
+}
+
+.nav-btn {
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bolder;
+    color: palevioletred;
+    font-weight: 900;
+}
+
+.random {
+    user-select: none;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.next img{ 
+    background: white;
+    border-radius: 50%;
+    height: 40px;
+    animation: smoothChange 0.8s linear;
+  
+}
+
+.prev img{
+    background: white;
+    border-radius: 50%;
+    height: 40px;
+    animation: smoothChange 0.8s linear;
+}
+
+@keyframes growShrink {
+    0% {
+        transform: scale(1);
+    }
+    25%{
+    transform: scale(1.15);        
+    }
+    50%{
+    transform: scale(1.2);
+    }
+    75%{
+    transform: scale(1.15);
+    }
+    100%{
+    transform: scale(1);
+    }
+}
+
+@keyframes smoothChange {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 50%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
