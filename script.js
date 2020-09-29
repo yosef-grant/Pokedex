@@ -65,10 +65,10 @@ searchBtn.addEventListener('click', () => {
 userInput.addEventListener('keyup', (e) => {
 
   if (e.key !== 'Enter') {
-    searchQuery = userInput.value;
-    searchQuery.toLowerCase();
+    searchQuery = userInput.value.toLowerCase();
+    console.log(searchQuery);
     
-  } else if(searchQuery <= 1) {
+  } else if (searchQuery <= 1) {
     prevReset();
     getData(searchQuery);
   } else getData(searchQuery);
