@@ -56,6 +56,10 @@ searchBtn.addEventListener('click', () => {
   getData(userInput.value);
 });
 
+searchBtn.addEventListener('touchend', () => {
+  getData(userInput.value);
+});
+
 // Search bar 'enter'
 
 userInput.addEventListener('keyup', (e) => {
