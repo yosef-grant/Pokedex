@@ -21,7 +21,7 @@ prevBtn.addEventListener('click', () => {
     dataId = 0;
     pokeDiv.innerHTML = `
           <img src="./assets/pokeball_bg_animated.jpg" id="bg"/>
-          <h2>Welcome!</h2>`;
+          <h2 class="message">Welcome!</h2>`;
   } else getData((dataId -= 1));
   console.log(dataId);
 });
@@ -34,7 +34,7 @@ nextBtn.addEventListener('click', () => {
     prevReset();
     pokeDiv.innerHTML = `
         <img src="./assets/pokeball_bg_animated.jpg" id="bg"/>
-        <h2>End of Pokedex.</h2>`;
+        <h2 class="message">End of Pokedex.</h2>`;
   } else if (dataId === undefined) {
     getData((dataId = 1));
   } else {
@@ -59,8 +59,16 @@ searchBtn.addEventListener('click', () => {
 // Search bar 'enter'
 
 userInput.addEventListener('keyup', (e) => {
-  e.key !== 'Enter' ? (searchQuery = userInput.value) : getData(searchQuery);
-});
+
+  if (e.key !== 'Enter') {
+    searchQuery = userInput.value;
+  } else if(searchQuery <= 1) {
+    prevReset();
+    getData(searchQuery);
+  } else getData(searchQuery);
+}
+)
+;
 
 // API search + Primary Functionality
 
@@ -95,7 +103,7 @@ async function getData(query) {
     userInput.value = '';
   } catch {
     pokeDiv.innerHTML = `
-        <h3>No matches found.<br><br> Please try another search!</h3>
+        <h3 class="error-message">No matches found.<br><br> Please try another search!</h3>
         `;
   }
 }
