@@ -57,6 +57,7 @@ body {
 }
 
 .pokemon {
+    position: relative;
   height: 450px;
   width: 350px;
   border: 20px solid rgb(243, 183, 52);
