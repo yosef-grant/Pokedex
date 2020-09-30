@@ -12,10 +12,6 @@ body {
   flex-direction: column;
 }
 
-body .keyboard {
-    height: calc(100% + 500px);
-}
-
 .searchbar {
   display: flex;
   padding: 10px;

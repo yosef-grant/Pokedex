@@ -15,11 +15,12 @@ userInput.addEventListener('focus', e => {
   const target = e.target;
   console.log('focussed');
   target.style.border="1px solid dodgerblue";
-  window.scrollTo(0,0);
+  target.style.marginTop="200px"
 })
 
 userInput.addEventListener('blur', () => {
   userInput.style.border="none";
+  userInput.style.marginTop="0";
 })
 
 
