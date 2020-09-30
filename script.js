@@ -10,6 +10,19 @@ let searchQuery, dataId;
 
 /* *** EVENT LISTENERS *** */
 
+document.body.addEventListener('focus', e => {
+  const target = e.target;
+  switch (target.tagName) {
+    case 'INPUT' :
+    case 'TEXTAREA':
+    case 'SELECT':
+      document.body.classList.add('keyboard');
+  }
+}, true);
+
+document.body.addEventListener('blur', () => {
+  document.body.classList.remove('keyboard');
+}, true)
 
 
 // Previous button

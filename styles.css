@@ -12,6 +12,10 @@ body {
   flex-direction: column;
 }
 
+body .keyboard {
+    height: calc(100% + 500px);
+}
+
 .searchbar {
   display: flex;
   padding: 10px;
@@ -178,6 +182,7 @@ body {
   border-radius: 50%;
   height: 85px;
   animation: smoothChange 0.8s linear;
+
 }
 
 @media screen and (max-width: 480px) {
