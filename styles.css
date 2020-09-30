@@ -255,6 +255,14 @@ body {
         min-height: 50px;
         min-width: 75px;
       }
+
+      #controls button:hover {
+        background-color: inherit;
+      }
+      
+      #controls button:active {
+        border: inherit;
+      }
       
       .next-prev {
         height: 50px;
