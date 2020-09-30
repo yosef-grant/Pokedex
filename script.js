@@ -6,23 +6,21 @@ const pokeDiv = document.getElementById('pokemon-container'),
   nextBtn = document.getElementById('next'),
   prevBtn = document.getElementById('prev');
 
+
 let searchQuery, dataId;
 
 /* *** EVENT LISTENERS *** */
 
-document.body.addEventListener('focus', e => {
+userInput.addEventListener('focus', e => {
   const target = e.target;
-  switch (target.tagName) {
-    case 'INPUT' :
-    case 'TEXTAREA':
-    case 'SELECT':
-      document.body.classList.add('keyboard');
-  }
-}, true);
+  console.log('focussed');
+  target.style.border="1px solid dodgerblue";
+  window.scrollTo(0,0);
+})
 
-document.body.addEventListener('blur', () => {
-  document.body.classList.remove('keyboard');
-}, true)
+userInput.addEventListener('blur', () => {
+  userInput.style.border="none";
+})
 
 
 // Previous button

@@ -5,7 +5,7 @@ body {
     rgb(199, 208, 245),
     rgb(248, 247, 247) 55%
   );
-  max-height: 100vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
