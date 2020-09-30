@@ -194,16 +194,15 @@ body {
       }
       
       #search-bar {
-        width: 280px;
+        width: 320px;
         height: 40px;
+        border-radius: 15px;
         font-size: 1.1em;
         margin-bottom: 5px;
       }
             
       #submit-btn {
-        width: 50px;
-        height: 40px;
-        font-size: 1.15em;
+        display: none;
       }
       
       .pokemon {

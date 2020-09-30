@@ -10,6 +10,17 @@ let searchQuery, dataId;
 
 /* *** EVENT LISTENERS *** */
 
+window.addEventListener('resize', () => {
+  
+  let viewportWidth = window.innerWidth;
+  let viewportHeight = window.innerHeight;
+
+  if(viewportHeight < 500) {
+    document.getElementsByTagName('BODY').style.height=viewportHeight;
+  }
+
+})
+
 // Previous button
 
 prevBtn.addEventListener('click', () => {
@@ -53,7 +64,7 @@ randomBtn.addEventListener('click', () => {
 // Search button
 
 searchBtn.addEventListener('click', () => {
-  getData(userInput.value);
+  getData(userInput.value.toLowerCase());
 });
 
 
