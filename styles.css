@@ -257,7 +257,7 @@ body {
       }
 
       #controls button:hover {
-        background-color: inherit;
+        background-color: rgb(121, 184, 248);
       }
       
       #controls button:active {
