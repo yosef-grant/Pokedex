@@ -10,16 +10,7 @@ let searchQuery, dataId;
 
 /* *** EVENT LISTENERS *** */
 
-window.addEventListener('resize', () => {
-  
-  let viewportWidth = window.innerWidth;
-  let viewportHeight = window.innerHeight;
 
-  if(viewportHeight < 500) {
-    document.getElementsByTagName('BODY').style.height=viewportHeight;
-  }
-
-})
 
 // Previous button
 
