@@ -12,17 +12,11 @@ let searchQuery, dataId;
 /* *** EVENT LISTENERS *** */
 
 userInput.addEventListener('focus', () => {
-  
   userInput.style.border="1.5px solid dodgerblue";
-  // target.style.marginTop="175px"
-  window.scrollTo(0,0)
-
 })
 
 userInput.addEventListener('blur', () => {
   userInput.style.border="none";
-  // userInput.style.marginTop="0";
-  window.scrollTo(0,0)
 })
 
 
