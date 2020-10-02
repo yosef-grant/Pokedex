@@ -6,19 +6,17 @@ const pokeDiv = document.getElementById('pokemon-container'),
   nextBtn = document.getElementById('next'),
   prevBtn = document.getElementById('prev');
 
-
 let searchQuery, dataId;
 
 /* *** EVENT LISTENERS *** */
 
 userInput.addEventListener('focus', () => {
-  userInput.style.border="1.5px solid dodgerblue";
-})
+  userInput.style.border = '1.5px solid dodgerblue';
+});
 
 userInput.addEventListener('blur', () => {
-  userInput.style.border="none";
-})
-
+  userInput.style.border = 'none';
+});
 
 // Previous button
 
@@ -66,26 +64,17 @@ searchBtn.addEventListener('click', () => {
   getData(userInput.value.toLowerCase());
 });
 
-
-
-
-
 // Search bar 'enter'
 
 userInput.addEventListener('keyup', (e) => {
-
   if (e.key !== 'Enter') {
     searchQuery = userInput.value.toLowerCase();
     console.log(searchQuery);
-    
   } else if (searchQuery <= 1) {
     prevReset();
     getData(searchQuery);
   } else getData(searchQuery);
-}
-)
-;
-
+});
 
 // API search + Primary Functionality
 

@@ -184,14 +184,14 @@ body {
 @media screen and (max-width: 480px) {
 
     html {
-        overflow: auto;
+        overflow: auto; /* prevents scrolling issue on mobile when searching */
     }
 
     body {
         height: auto;
         background-color: rgb(243, 183, 52);
         background-image: none;
-        overflow: auto;
+        overflow: auto; /* prevents scrolling issue on mobile when searching */
     }
     
       .searchbar {
